@@ -499,6 +499,108 @@
     margin-bottom:2rem;
   }
 
+  /* ---------- CAROUSEL ---------- */
+  #carousel{background:linear-gradient(180deg, #f0eafa, var(--paper));}
+  #carousel .section-head h2{color:#6930c3;}
+  #carousel .section-head .num{color:#9b5de5;}
+
+  .carousel-intro{
+    background:linear-gradient(135deg,#1a1035,#2d1b69);
+    color:var(--white);
+    border-radius:22px;
+    padding:2rem 2.4rem;
+    margin-bottom:2.4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:1rem;
+  }
+  .carousel-intro h3{
+    font-family:'Cairo',sans-serif;
+    font-size:1.25rem;
+    font-weight:700;
+  }
+  .carousel-intro span{color:#c4b8f0;font-size:.9rem;}
+  .carousel-badge{
+    font-family:'Cairo',sans-serif;
+    font-weight:700;
+    font-size:.78rem;
+    background:linear-gradient(90deg,#9b5de5,#c77dff);
+    padding:.5rem 1rem;
+    border-radius:999px;
+    color:var(--white);
+  }
+
+  .carousel-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:1.4rem;
+  }
+
+  .carousel-card{
+    background:#1a1035;
+    border-radius:20px;
+    padding:1.8rem 1.6rem;
+    border:1px solid rgba(155,93,229,.3);
+    transition:transform .3s ease, box-shadow .3s ease;
+    color:var(--white);
+  }
+  .carousel-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px -14px rgba(107,48,195,.5);
+  }
+  .carousel-card .step-num{
+    font-family:'Changa',sans-serif;
+    font-weight:800;
+    font-size:2rem;
+    background:linear-gradient(90deg,#9b5de5,#c77dff);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    margin-bottom:.6rem;
+    display:block;
+  }
+  .carousel-card h4{
+    font-family:'Cairo',sans-serif;
+    font-weight:700;
+    font-size:1rem;
+    color:#e0d4ff;
+    margin-bottom:.7rem;
+    line-height:1.6;
+  }
+  .carousel-card p{
+    font-size:.9rem;
+    color:#b0a0d8;
+    line-height:1.8;
+  }
+
+  .carousel-summary{
+    margin-top:2rem;
+    background:linear-gradient(135deg,#6930c3,#9b5de5);
+    border-radius:20px;
+    padding:2rem 2.2rem;
+    color:var(--white);
+  }
+  .carousel-summary h4{
+    font-family:'Changa',sans-serif;
+    font-size:1.3rem;
+    margin-bottom:1rem;
+  }
+  .summary-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.7rem;
+  }
+  .summary-chip{
+    font-family:'Cairo',sans-serif;
+    font-weight:700;
+    font-size:.85rem;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.25);
+    padding:.5rem 1rem;
+    border-radius:999px;
+    backdrop-filter:blur(4px);
+  }
+
   /* ---------- FOOTER ---------- */
   footer{
     background:var(--ink);
@@ -710,6 +812,79 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<section class="section" id="carousel">
+  <div class="section-head reveal">
+    <span class="num">04</span>
+    <h2>محتوى سوشيال ميديا</h2>
+    <span class="sub">كاروسيل تعليمي لمنصة "أفق" — محتوى يعلّم ويقنع بنفس الوقت.</span>
+  </div>
+  <div class="content-wrap">
+
+    <div class="carousel-intro reveal">
+      <div>
+        <h3>كيف تختار الكورس المناسب لك؟</h3>
+        <span>كاروسيل 8 نقاط — منصة أفق التعليمية</span>
+      </div>
+      <span class="carousel-badge">كاروسيل كامل</span>
+    </div>
+
+    <div class="carousel-grid">
+      <div class="carousel-card reveal">
+        <span class="step-num">01</span>
+        <h4>اسأل روحك: شن نبي نحقّق؟</h4>
+        <p>قبل أي كورس… وقف لحظة. تبي تفهم المادة؟ ترفع معدلك؟ الهدف هو اللي يحدد الطريق.</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">02</span>
+        <h4>شوف أسلوب الأستاذ مش "عدد الساعات"</h4>
+        <p>شوف عيّنات شرح، اسمع صوته، جرّب درس واحد. لو حسّيت دماغك مرتاح → هذا هو الصح.</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">03</span>
+        <h4>هل يناسب وقتك؟</h4>
+        <p>الكورس الممتاز هو اللي يمشي مع جدولك، مش اللي يكسّر روتينك ويعطّلك.</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">04</span>
+        <h4>راجع تقييمات الطلبة الحقيقيين</h4>
+        <p>ترجمة الواقع أهم من البوستات الجميلة. شوف شن استفادوا وشن السلبيات.</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">05</span>
+        <h4>اسأل على المحتوى… مش على السعر</h4>
+        <p>أرخص كورس مش دايمًا الأفضل. المعيار: كم مهارة حأطلع بيها؟</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">06</span>
+        <h4>اختار كورس يمشي مع مستواك</h4>
+        <p>لو مستوى الكورس أعلى منك → حتنخنق. لو أقل → حتملّ. اختار اللي يشرح على قَدّك.</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">07</span>
+        <h4>جرّب قبل ما تلتزم</h4>
+        <p>لو عنده درس تجريبي أو PDF مجاني — جرّبهم باش تقدر تحكم صح.</p>
+      </div>
+      <div class="carousel-card reveal">
+        <span class="step-num">08</span>
+        <h4>لو حسّيتي إنك ضايعة… اسأل</h4>
+        <p>مافيها باس تسأل: "شن الكورس اللي يناسبني؟" الاختيار الصح يبدأ بسؤال صغير.</p>
+      </div>
+    </div>
+
+    <div class="carousel-summary reveal">
+      <h4>🎯 الخلاصة الذهبية — الكورس المناسب هو اللي:</h4>
+      <div class="summary-list">
+        <span class="summary-chip">✔️ أسلوبه يناسبك</span>
+        <span class="summary-chip">✔️ وقته يمشي مع يومك</span>
+        <span class="summary-chip">✔️ شرحه واضح</span>
+        <span class="summary-chip">✔️ مستواه مناسب ليك</span>
+        <span class="summary-chip">✔️ يخليك تتقدّم… مش تتوتر</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
